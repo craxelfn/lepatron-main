@@ -190,7 +190,9 @@ nav .sub a:hover{
     flex-direction: column;
     
 }
-
+.title-last { 
+  font-size: 20px;
+}
 .content { 
     width: 100%;
     height: 100%;
@@ -222,7 +224,7 @@ nav .sub a:hover{
     border: 1px solid #fff;
     color: #fff;
     border-radius: 5px;
-    width: 20% ; 
+    width: 50% ; 
     text-align: center;
     padding: 5px;
     cursor: pointer;
@@ -313,6 +315,8 @@ nav .sub a:hover{
 .news-list .hero-news .hero-news-type {
      border-bottom: 1px solid #fff ;
      width: 40%;
+     font-size: 15px;
+     text-wrap: nowrap;
 }
 .blue-text{ 
     color: #0e396c !important;
@@ -387,6 +391,12 @@ nav .sub a:hover{
 .description1 .info p{ 
     font-size: 18px;
 }
+.trend-image { 
+  display: flex;
+  align-items: center;
+  height: 50% !important;
+  width: 50% ;
+}
 /* article space */ 
 .type-articles{ 
     width: 75%;
@@ -411,7 +421,6 @@ nav .sub a:hover{
 .a-la-une .article ,.economie-finance .article { 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 30px;
     position: relative;
     cursor: pointer;
