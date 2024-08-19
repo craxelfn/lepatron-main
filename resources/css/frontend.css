@@ -8,7 +8,14 @@
 body, html {
     width: 100%;
 }
-
+.link{ 
+  text-decoration: none !important;
+  color: #fff;
+}
+.link-black { 
+  text-decoration: none;
+  color: #000;
+}
 
 /* body { 
     background-color: black !important;
@@ -207,6 +214,10 @@ nav .sub a:hover{
     height: 60vh;
     width: 100%;
     border-radius: 4px;
+    
+}
+.dark-img {
+  filter: brightness(45%);
 }
 
 .content .content-element .all { 
@@ -296,21 +307,26 @@ nav .sub a:hover{
 .news-list{ 
     display: flex;
     flex-direction: column;
-    
     border-radius: 8px;
     overflow: hidden;
     justify-content: space-between;
+    gap: 5px;
 }
 .news-list .hero-news{ 
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     align-items: center;
     width: 100%;
     text-decoration: none;
     color: #000;
 }
-.news-list .hero-news img { 
-    width: 50%;
+.news-list .hero-news-description { 
+  width: 200%;
+}
+.news-list .hero-news .trend-imgg { 
+    width: 100%;
+    height:100%;
 }
 .news-list .hero-news .hero-news-type {
      border-bottom: 1px solid #fff ;
@@ -323,7 +339,9 @@ nav .sub a:hover{
 }
 
 
-
+.description{
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
 /* trending news */
 .ctn2{ 
     border-radius: 10px;
@@ -356,7 +374,7 @@ nav .sub a:hover{
 
 .trend-img {
     width: 100%;
-    height: 100%;
+    height: 95%;
     border-radius: 10px;
 }
 .trend-title{ 
@@ -384,6 +402,7 @@ nav .sub a:hover{
     border-radius: 8px;
     padding: 8px;
     text-align: center;
+    
 }
 .description1 h1 { 
     font-weight: bold;
@@ -393,9 +412,14 @@ nav .sub a:hover{
 }
 .trend-image { 
   display: flex;
+  flex-direction: column;
+  max-height: 200px;
   align-items: center;
-  height: 50% !important;
-  width: 50% ;
+}
+.trends-apropo{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 /* article space */ 
 .type-articles{ 
@@ -509,7 +533,7 @@ nav .sub a:hover{
 }
 .article2 { 
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     gap: 5%;
     max-height: 200px ;
     width: 100%;
@@ -517,10 +541,17 @@ nav .sub a:hover{
     text-decoration: none;
     color:#000;
 }
-.article2-image { 
-    width:40%;
+.article2-image  { 
+    width: 40%;
     height: 100%;
-    border-radius: 4px;
+    
+}
+.article2-image img { 
+  min-width: 200px;
+  min-height: 200px;
+}
+.bordred{
+  border-radius: 5px !important;
 }
 .article2 .article2-description{ 
     display: flex;
@@ -756,6 +787,7 @@ nav .sub a:hover{
   }
   .article-img { 
     border-radius: 5px;
+    max-height: 50vh;
   }
   /* =======
   FOR TABLET

@@ -12,7 +12,7 @@
         <div class="container">
             <section class="article-page">
                 <article>
-                    <img src=" {{$article->image}}"   class="img-fluid article-img mb-3" alt="" />
+                    <img src=" {{$article->image}}"   class="img-fluid article-img  mb-3" alt="" />
                     <h2>{{ $article->title }}</h2>
                     <div>
                         <p>

@@ -13,8 +13,8 @@ class FrontEndController extends Controller
         $latest_news = Post::orderBy("created_at", "desc")->take(3)->get();
         
         // Get distinct articles grouped by category_id
-        $articles_slider = Post::select('category_id', 'title','body','created_at')
-                               ->groupBy('category_id', 'title' ,'body','created_at')
+        $articles_slider = Post::select('category_id', 'title','body','created_at','image')
+                               ->groupBy('category_id', 'title' ,'body','created_at','image')
                                ->take(5)
                                ->get();
         $trend_news = Post::orderBy("views_count", "desc")->first() ; 
