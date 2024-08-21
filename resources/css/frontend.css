@@ -6,7 +6,8 @@
 }
 
 body, html {
-    width: 100%;
+    width: 100% ;
+    margin: auto;
 }
 .link{ 
   text-decoration: none !important;
@@ -34,7 +35,6 @@ body, html {
 }
 
 main{ 
-    
     display: flex;
     flex-direction: column;
     gap: 10vh;
@@ -146,44 +146,52 @@ nav .sub a:hover{
     height: 30px;
     display: none;
     border: 1px solid white;
-    border-radius: 10px;
+    position: fixed;
+    z-index: 555;
+    border: none;
+    margin-left: 2px;
+    
 }
 
 .side--ul  { 
     list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    position: fixed !important;
+    display: flex   ;
+    flex-direction: column  ;
+    gap: 10px ;
     background-color: #f8f9fa;
-    width: 300px;   
+    width: 300px ;   
     padding: 20px;
     border-radius: 0 15px 15px 0;
-    height: 85vh;
+    height: 70vh ;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     display: none;
     position: absolute ; 
     z-index: 9998;
 }
+
 .side--ul .cancel{
-    display: flex;
-    justify-content: end;
+    display: flex ;
+    justify-content: end ;
+    
 }
 .side--ul .cancel img{ 
     height: 30px;
     width: 30px;
+    
 }
-.side--ul a { 
+.side--ul li a { 
     text-decoration: none;
     color: #000;
     font-weight: 500;
 }
-.side--ul  a li {
+.side--ul   li  {
     padding: 10px;
     border-bottom: 1px solid darkgray;
     width: 90%;
     cursor: pointer;
 }
-.side--ul  a:hover { 
+.side--ul  li a:hover { 
     color: goldenrod;
 }
 
@@ -307,17 +315,19 @@ nav .sub a:hover{
 .news-list{ 
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     border-radius: 8px;
+    
     overflow: hidden;
-    justify-content: space-between;
-    gap: 5px;
+    height: 60vh;
 }
 .news-list .hero-news{ 
     display: flex;
     justify-content: space-between;
     gap: 10px;
     align-items: center;
-    width: 100%;
+    width: 100% ;
+    height: 15vh;
     text-decoration: none;
     color: #000;
 }
@@ -346,8 +356,7 @@ nav .sub a:hover{
 .ctn2{ 
     border-radius: 10px;
     padding: 0 !important;
-    width: 100%;
-    
+    width: 90%;    
 }
 .trends{ 
     display: flex;
@@ -357,8 +366,13 @@ nav .sub a:hover{
     max-height: 25vh !important;
     text-decoration: none;
     color: #000;
+    max-height: 25vh;
 }
-
+.hero-news .trend-images{ 
+    height: 100% !important ;
+    width: 100% !important;
+    border-radius: 5px;
+}
 .trend-news img { 
     border-radius: 6px;
     height: 80%;
@@ -370,11 +384,14 @@ nav .sub a:hover{
 }
 .position-relative {
     position: relative;
+    
 }
 
 .trend-img {
+    margin-top: 5px;
     width: 100%;
     height: 95%;
+    max-height: 75vh;
     border-radius: 10px;
 }
 .trend-title{ 
@@ -394,6 +411,7 @@ nav .sub a:hover{
     z-index: 5; 
     height: 90%;
     margin: 25px;
+   
 }
 .description1 .type{ 
     margin-top: 9%;
@@ -415,6 +433,9 @@ nav .sub a:hover{
   flex-direction: column;
   max-height: 200px;
   align-items: center;
+  border-radius: 5px;
+  
+  
 }
 .trends-apropo{ 
   display: flex;
@@ -456,7 +477,6 @@ nav .sub a:hover{
 }
 .a-la-une .article img ,.economie-finance .article img { 
     border-radius: 10px;
-    
     z-index: 0;
 }
 .a-la-une .article-img .type , .economie-finance .article-img .type {
@@ -541,14 +561,18 @@ nav .sub a:hover{
     text-decoration: none;
     color:#000;
 }
+.article2 a { 
+  width: 90% !important;
+}
 .article2-image  { 
-    width: 40%;
-    height: 100%;
+    width: 100% !important ;
+    height: 100%;   
     
 }
 .article2-image img { 
-  min-width: 200px;
+  min-width: 100% !important;
   min-height: 200px;
+  
 }
 .bordred{
   border-radius: 5px !important;
@@ -600,8 +624,13 @@ nav .sub a:hover{
         display: block;
     }
     .side--ul{
-        display: none;   
+        display: none ;
+          
     }
+    .side--ul li { 
+      display: inline-block;
+    }
+    
     .type-articles{ 
         width: 95%;
     }
@@ -617,7 +646,7 @@ nav .sub a:hover{
         margin: 20px 0;
     }
     .trends{ 
-        margin-top: 50px;
+        margin-top: 10px;
     }
     .description1 .type{ 
         margin-top: 0px;
@@ -647,7 +676,37 @@ nav .sub a:hover{
    .news-list { 
     gap: 10px;
    }
-   
+   .trend-image{ 
+    max-height: 25vh;   
+    height: 100%;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+    
+   }
+   .trends-apropo{ 
+    margin-left: 10px;
+   }
+   .a-la-une .article ,.economie-finance .article{ 
+    gap: 0;
+   }
+   .a-la-une .article img ,.economie-finance .article img{
+    height: 20vh !important;
+    width: 95%;
+    margin-left: 2.5%;
+    
+   }
+   .content .content-element .image1{
+    height: 45vh;
+   }
+   .article2-image  { 
+    width: 100% !important;
+    
+   }
+   .article2 { 
+    font-size: 13px;
+   }
+
 }
 
 /* category page */ 
@@ -671,31 +730,42 @@ nav .sub a:hover{
     text-decoration: none;
     color: #000;
 }
-.element-article img { 
-    width: 40%;   
+
+.element-article  .categoryy-img  {     
+    max-width: 300px;
+    min-width: 300px;
     border-radius: 4px;
-    height: 100%;
+    height: 100% ;
+}
+.categoryy-img img { 
+    width: 100% !important;
 }
 .element-article .element-article-infos{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 0;
+    
 }
 .element-article .element-article-infos .element-article-infos-title { 
     font-weight: bold;
     font-size: 20px;
+    text-decoration: none;
+    color: #000;
 }
 .element-article .element-article-infos .element-article-infos-descrip { 
     font-size: 16px;
+    text-decoration: none;
 }
 .element-article .element-article-infos div { 
     display: flex;
     justify-content: end;
     margin-right: 12%;
+    
 }
 .hover-underline-red { 
     color: red;
+    text-decoration: none;
 }
 .news-element .nextpage { 
     display: flex;
@@ -732,6 +802,13 @@ nav .sub a:hover{
     max-height: 50vh;
     width: 100%;
   }
+  .article .article-img{ 
+    height: 30vh !important ;
+  }
+  .article .article-img img { 
+    height: 100%;
+    width: 100%;
+  }
   .first-div{ 
     display: flex;
     align-items: center;
@@ -746,7 +823,17 @@ nav .sub a:hover{
   border-top: 1.5px solid lightgray !important;
   padding: 20px 0;
 }
-
+@media (max-width:800px) {
+  .article .article-img {
+    height:auto !important; 
+    min-height: 30vh !important;
+  }
+}
+@media (max-width:500px) {
+  .article .article-img{
+    height:auto !important; 
+  }
+}
 
 
 /* footer */

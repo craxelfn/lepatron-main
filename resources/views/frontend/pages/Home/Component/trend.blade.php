@@ -1,4 +1,4 @@
-<section class="h-100 mt-5 p-5">
+<section class="h-100 mt-5 ps-2">
             <div class="container ctn2 bg-white">
             <h1 class="mb-3 trends-title ps-3 ">Trending News</h1>
                 <div class="row">

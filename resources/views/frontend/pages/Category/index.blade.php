@@ -13,7 +13,7 @@
 
 
                     <div class="element-article mb-3">
-                        <a href="">
+                        <a href="" class="categoryy-img">
                         <img class="h-100  w-100" src="{{ $article->image}}" alt="">
                         </a>
                         <div class="element-article-infos">
@@ -28,25 +28,55 @@
                             </p>
                             <div><a href="" class="element-article-infos-readm hover-underline-red">Lire la suite —></a> </div>
                         </div>
-</div>
+                    </div>
                    @endforeach
                    
 
                    {{ $articles->links() }}
                    
-                    <div class="nextpage">
-                        <a href="">1</a>
-                        <a href="">2</a>
-                        <a href="">3</a>
-                        <p>...</p>
-                        <a href="">400</a>
-                        
-                    </div>
+                    
                 </div>
                 
                 <div class="col-lg-4 erea2  mt-5">
                     <div class="titile mb-5">
                         <p class="ms-3">Last news</p>
+                    </div>
+                    <div class="last-article ps-2">
+                        <div class="article mb-2">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
+                                </div>
+                                <div class="col-lg-7 w-50">
+                                    <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
+                                    <p class="text-black-50"> August 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article mb-2">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
+                                </div>
+                                <div class="col-lg-7 w-50">
+                                    <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
+                                    <p class="text-black-50"> August 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article mb-2">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
+                                </div>
+                                <div class="col-lg-7 w-50">
+                                    <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
+                                    <p class="text-black-50"> August 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>

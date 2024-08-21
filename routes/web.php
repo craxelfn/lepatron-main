@@ -49,7 +49,7 @@ Route::middleware([
 
 
 Route::get('/', [FrontEndController::class,'homepage']);
-Route::get('/{category}', [FrontEndController::class,'category']);
+Route::get('/{category}', [FrontEndController::class,'category'])->name("category.index");
 Route::get('/{category}/{article}/{id}', [FrontEndController::class,'article'])->name("post.index");
 
 

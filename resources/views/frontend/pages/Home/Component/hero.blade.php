@@ -1,6 +1,6 @@
 <section class="hero h-100">
             <div class="container">
-                <div class="row mt-4 ">
+                <div class="row mt-2 ">
                      <div class="col-lg-8">
                        
                       

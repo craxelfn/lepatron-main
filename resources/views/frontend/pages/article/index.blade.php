@@ -9,7 +9,7 @@
 @include('frontend.Component.header')
 
 <main>
-        <div class="container">
+        <div class="container mt-5">
             
             <div class="row">
                 <div class="col-lg-8">

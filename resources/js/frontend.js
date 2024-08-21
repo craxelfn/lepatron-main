@@ -3,16 +3,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const sideUl = document.querySelector('.side--ul');
     const cancelBtn = document.querySelector('.side--ul .cancel img');
 
+    function hideSideMenu() {
+        sideUl.style.display = 'none';
+        flesh.style.display = 'block';
+    }
+
     flesh.addEventListener('click', function () {
         sideUl.style.display = 'block';
         flesh.style.display = 'none';
     });
 
-    cancelBtn.addEventListener('click', function () {
-        sideUl.style.display = 'none';
-        flesh.style.display = 'block';
+    cancelBtn.addEventListener('click', hideSideMenu);
+
+    document.addEventListener('click', function (event) {
+        if (sideUl.style.display === 'block' && !sideUl.contains(event.target) && !flesh.contains(event.target)) {
+            hideSideMenu();
+        }
+    });
+
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > window.innerHeight * 0.1) {
+            sideUl.style.top = '10px';
+            flesh.style.top = '10px';
+        } else {
+            sideUl.style.top = ''; 
+            flesh.style.top = ''; 
+        }
     });
 });
+
 
 //--------------------hero-----------------//
 
@@ -47,27 +66,27 @@ function prevContent() {
     showContent(currentIndex);
 }
 
-let sliderInterval = setInterval(nextContent, 5000);
+let sliderInterval = setInterval(nextContent, 2000);
 
 numbers.forEach((number, index) => {
     number.addEventListener('click', () => {
         clearInterval(sliderInterval);
         showContent(index);
         currentIndex = index;
-        sliderInterval = setInterval(nextContent, 5000);
+        sliderInterval = setInterval(nextContent, 2000);
     });
 });
 
 prevButton.addEventListener('click', () => {
     clearInterval(sliderInterval);
     prevContent();
-    sliderInterval = setInterval(nextContent, 5000);
+    sliderInterval = setInterval(nextContent, 2000);
 });
 
 nextButton.addEventListener('click', () => {
     clearInterval(sliderInterval);
     nextContent();
-    sliderInterval = setInterval(nextContent, 5000);
+    sliderInterval = setInterval(nextContent, 2000);
 });
 
 showContent(currentIndex);

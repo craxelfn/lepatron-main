@@ -1,4 +1,4 @@
-<section class="entreprises">
+<section class="entreprises mb-5">
             <div class="type-articles">
                 <h3 class="text-center">entreprises</h3>
             </div>
@@ -23,7 +23,7 @@
                                  
                                 <p class="text-black-50 article2-date">{{ $alaune_news->created_at->format('F j, Y') }} </p>
                                 <p class="article2-info">
-                                {{ Str::limit($alaune_news->body, 200) }}
+                                {{ Str::limit($alaune_news->body, 50) }}
                                 </p>
                             </div>
                     </div>
@@ -41,7 +41,7 @@
                 </div>
             </div>
 </section>
-<section class="a-la-une h-100">
+<section class="a-la-une h-100 mb-5">
             <div class="type-articles">
                  <h3 class="text-center">A La Une</h3>
             </div>
@@ -49,8 +49,8 @@
                     <div class="row " >
                         @foreach ($entreprise_news as $entreprise_news)
                             <div  class="col-lg-3 article">
-                                <a href="{{ Route('post.index',['category'=>$entreprise_news->category->name , 'article'=>$entreprise_news->slug,'id'=>$entreprise_news->id]) }}" class="article-img image-hover1">
-                                    <img class="img-fluid" src="{{$entreprise_news->image }}" alt="">
+                                <a href="{{ Route('post.index',['category'=>$entreprise_news->category->name , 'article'=>$entreprise_news->slug,'id'=>$entreprise_news->id]) }}" class="">
+                                    <img class="img-fluid article-img image-hover1" src="{{$entreprise_news->image }}" alt="">
                                     </a>
                                 <div class="article-description">
                                     <p class="text-black-50">{{ $entreprise_news->created_at->format('F j, Y')}} </p>
@@ -71,12 +71,12 @@
                         @endforeach
                     </div>
                     <div class="read">
-                        <button class="read-more mt-5">Show more</button>
+                        <button class="read-more mt-5"><a href="/entreprises" class="link link-black">Read more</a></button>
                     </div>
             </div>
              
 </section>
-<section class="economie_finance">
+<section class="economie_finance entreprises mb-5">
             <div class="type-articles">
                 <h3 class="text-center">economie&finance</h3>
             </div>
@@ -86,8 +86,8 @@
                         
                      @foreach ($economie_finance as $economie_finance)
                     <div class="article2 mb-3">
-                            <a href="{{ Route('post.index',['category'=>$economie_finance->category->name , 'article'=>$economie_finance->slug,'id'=>$economie_finance->id]) }} " class="article2-image img-fluid">
-                             <img src="{{$economie_finance->image }}" class="img-fluid bordred" alt="">
+                            <a href="{{ Route('post.index',['category'=>$economie_finance->category->name , 'article'=>$economie_finance->slug,'id'=>$economie_finance->id]) }} " class="">
+                             <img src="{{$economie_finance->image }}" class="img-fluid bordred article2-image" alt="">
                             </a>
                             <div class="article2-description">
                                 
@@ -99,7 +99,7 @@
                              
                                 <p class="text-black-50 article2-date">{{ $economie_finance->created_at->format('F j, Y') }} </p>
                                 <p class="article2-info">
-                                {{ Str::limit($economie_finance->body, 200) }}
+                                {{ Str::limit($economie_finance->body, 50   ) }}
                                 </p>
                             </div>
                     </div>
@@ -117,7 +117,7 @@
                 </div>
             </div>
 </section>
-<section class="tourisme a-la-une h-100">
+<section class="tourisme a-la-une h-100 mb-5">
             <div class="type-articles">
                  <h3 class="text-center">tourisme</h3>
             </div>
@@ -125,8 +125,8 @@
                     <div class="row " >
                         @foreach ($tourisme as $tourisme)
                             <div  class="col-lg-3 article">
-                                <a href="{{ Route('post.index',['category'=>$tourisme->category->name , 'article'=>$tourisme->slug,'id'=>$tourisme->id]) }}" class="article-img image-hover1">
-                                    <img class="img-fluid" src="{{$tourisme->image }}" alt="">
+                                <a href="{{ Route('post.index',['category'=>$tourisme->category->name , 'article'=>$tourisme->slug,'id'=>$tourisme->id]) }}" class="">
+                                    <img class="img-fluid article-img image-hover1" src="{{$tourisme->image }}" alt="">
                                     </a>
                                 <div class="article-description">
                                     <p class="text-black-50">{{ $tourisme->created_at->format('F j, Y')}} </p>
@@ -152,7 +152,7 @@
             </div>
              
 </section>
-<section class="agenda">
+<section class="agenda entreprises mb-5">
             <div class="type-articles">
                 <h3 class="text-center">agenda</h3>
             </div>
@@ -162,8 +162,8 @@
                         
                      @foreach ($agenda as $agenda)
                     <div class="article2 mb-3">
-                            <a href="{{ Route('post.index',['category'=>$agenda->category->name , 'article'=>$agenda->slug,'id'=>$agenda->id]) }} " class="article2-image img-fluid">
-                             <img src="{{$agenda->image }}" class="img-fluid bordred" alt="">
+                            <a href="{{ Route('post.index',['category'=>$agenda->category->name , 'article'=>$agenda->slug,'id'=>$agenda->id]) }} " class="">
+                             <img src="{{$agenda->image }}" class="img-fluid bordred article2-image" alt="">
                             </a>
                             <div class="article2-description">
                                 
@@ -175,7 +175,7 @@
                              
                                 <p class="text-black-50 article2-date">{{ $agenda->created_at->format('F j, Y') }} </p>
                                 <p class="article2-info">
-                                {{ Str::limit($agenda->body, 200) }}
+                                {{ Str::limit($agenda->body, 50) }}
                                 </p>
                             </div>
                     </div>
@@ -193,7 +193,7 @@
                 </div>
             </div>
 </section>
-<section class="business a-la-une h-100">
+<section class="business a-la-une h-100 mb-5">
             <div class="type-articles">
                  <h3 class="text-center">business</h3>
             </div>
@@ -201,8 +201,8 @@
                     <div class="row " >
                         @foreach ($business as $business)
                             <div  class="col-lg-3 article">
-                                <a href="{{ Route('post.index',['category'=>$business->category->name , 'article'=>$business->slug,'id'=>$business->id]) }}" class="article-img image-hover1">
-                                    <img class="img-fluid" src="{{$business->image }}" alt="">
+                                <a href="{{ Route('post.index',['category'=>$business->category->name , 'article'=>$business->slug,'id'=>$business->id]) }}" class="">
+                                    <img class="img-fluid article-img image-hover1" src="{{$business->image }}" alt="">
                                     </a>
                                 <div class="article-description">
                                     <p class="text-black-50">{{ $business->created_at->format('F j, Y')}} </p>
@@ -228,7 +228,7 @@
             </div>
              
 </section>
-<section class="nomination">
+<section class="nomination entreprises mb-5">
             <div class="type-articles">
                 <h3 class="text-center">nomination</h3>
             </div>
@@ -238,8 +238,8 @@
                         
                      @foreach ($nomination as $nomination)
                     <div class="article2 mb-3">
-                            <a href="{{ Route('post.index',['category'=>$nomination->category->name , 'article'=>$nomination->slug,'id'=>$nomination->id]) }} " class="article2-image img-fluid">
-                             <img src="{{$nomination->image }}" class="img-fluid bordred" alt="">
+                            <a href="{{ Route('post.index',['category'=>$nomination->category->name , 'article'=>$nomination->slug,'id'=>$nomination->id]) }} " class="">
+                             <img src="{{$nomination->image }}" class="img-fluid bordred article2-image" alt="">
                             </a>
                             <div class="article2-description">
                                 
@@ -251,7 +251,7 @@
                              
                                 <p class="text-black-50 article2-date">{{ $nomination->created_at->format('F j, Y') }} </p>
                                 <p class="article2-info">
-                                {{ Str::limit($nomination->body, 200) }}
+                                {{ Str::limit($nomination->body, 50) }}
                                 </p>
                             </div>
                     </div>

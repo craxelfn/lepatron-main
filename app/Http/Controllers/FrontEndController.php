@@ -37,7 +37,8 @@ class FrontEndController extends Controller
             'tourisme' => $tourisme , 
             'agenda' => $agenda , 
             'business' => $business ,
-            'nomination' => $nomination
+            'nomination' => $nomination,
+            
 
 
 
