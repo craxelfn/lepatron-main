@@ -4,30 +4,34 @@
 @include('frontend.Component.header')
 <main>
         <div class="container mt-5">
-            <div class="row">
-                <div class="col-lg-8 news-element p-5 ">
+            <div class="row ">
+                <div class="col-lg-8 news-element">
                     <a href="post.html" class="titile mb-5">
                         <p class="ms-3">{{ $category->name }}</p>
                     </a>
                     @foreach($articles as $article )
-
-
-                    <div class="element-article mb-3">
-                        <a href="" class="categoryy-img">
-                        <img class="h-100  w-100" src="{{ $article->image}}" alt="">
-                        </a>
-                        <div class="element-article-infos">
-                            <h2>
-                                <a class=" element-article-infos-title">
-                                {{ $article->title}}
+                    <div class=" mb-3">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-5">
+                                <a href="{{ Route('post.index',['category'=>$article->category->name , 'article'=>$article->slug,'id'=>$article->id]) }} " class="categoryy-img">
+                                    <img class="h-100  w-100" src="{{ $article->image}}" alt="">
                                 </a>
-                            </h2> 
-                            <p class="text-black-50 ms-3 h6">{{ $article->created_at->format('F j, Y') }}</p>
-                            <p class="element-article-infos-descrip">
-                            {!! Illuminate\Support\Str::words(strip_tags($article->body), 40, '...') !!}
-                            </p>
-                            <div><a href="" class="element-article-infos-readm hover-underline-red">Lire la suite —></a> </div>
-                        </div>
+                            </div>
+                            <div class="col-lg-7 col-md-7">
+                                <div class="element-article-infos">
+                                    <h2>
+                                        <a href="{{ Route('post.index',['category'=>$article->category->name , 'article'=>$article->slug,'id'=>$article->id]) }} " class=" element-article-infos-title">
+                                        {{ $article->title}}
+                                        </a>
+                                    </h2> 
+                                    <p class="text-black-50 ms-3 h6">{{ $article->created_at->format('F j, Y') }}</p>
+                                    <p class="element-article-infos-descrip">
+                                    {!! Illuminate\Support\Str::words(strip_tags($article->body), 50, '...') !!}
+                                    </p>
+                                    <div><a href="" class="element-article-infos-readm hover-underline-red">Lire la suite —></a> </div>
+                                </div>
+                            </div>    
+                        </div>      
                     </div>
                    @endforeach
                    

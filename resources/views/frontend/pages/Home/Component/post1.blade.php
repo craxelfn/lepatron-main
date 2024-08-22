@@ -1,41 +1,37 @@
-<section class="entreprises mb-5">
+<section class="economie_finance entreprises mb-5">
             <div class="type-articles">
-                <h3 class="text-center">entreprises</h3>
+                <h3 class="text-center">economie&finance</h3>
             </div>
             <div class="container ">
                 <div class="row pt-3">
                     <div class="col-lg-9 reomvepad p-5">
                         
-                     @foreach ($alaune_news as $alaune)
+                     @foreach ($alaune_news as $alaune_news)
                     <div class="article2 mb-3">
-                        <a href="{{ Route('post.index',['category'=>$alaune->category->name , 'article'=>$alaune->slug,'id'=>$alaune->id]) }}">
-
-                       
-                            <img src="{{$alaune->image }}" class="article2-image img-fluid" alt="">
-                        </a>    
+                            <a href="{{ Route('post.index',['category'=>$alaune_news->category->name , 'article'=>$alaune_news->slug,'id'=>$alaune_news->id]) }} " class="">
+                             <img src="{{$alaune_news->image }}" class="img-fluid bordred article2-image" alt="">
+                            </a>
                             <div class="article2-description">
                                 
-                                    <h3 class="h3 article2-title">
-                                        <a class="hover-underline" href="{{ Route('post.index',['category'=>$alaune->category->name , 'article'=>$alaune->slug,'id'=>$alaune->id]) }}">
-                                            {{ $alaune_news->title}}
-                                        </a>
-                                    </h3>
-                                 
+                                <h2 class="h3 article2-title ">
+                                 <a href="{{ Route('post.index',['category'=>$alaune_news->category->name , 'article'=>$alaune_news->slug,'id'=>$alaune_news->id]) }}" class="link-black hover-underline">
+                                    {{ $alaune_news->title}}
+                                 </a>
+                                </h2>
+                             
                                 <p class="text-black-50 article2-date">{{ $alaune_news->created_at->format('F j, Y') }} </p>
                                 <p class="article2-info">
-                                {{ Str::limit($alaune_news->body, 50) }}
+                                {{ Str::limit($alaune_news->body, 50   ) }}
                                 </p>
                             </div>
                     </div>
                         @endforeach
                         <div class="read">
-                            <button class="read-more mt-5">Show more</button>
+                            <button class="read-more mt-5"><a href="/a-la-une" class="link link-black">Read more</a></button>
                         </div>
                     </div>
                     <div class="col-lg-3 banniers">
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
+                        
                         <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
                     </div>
                 </div>
@@ -63,7 +59,7 @@
                                     
                                     
                                     <p>
-                                    {{ Str::limit($entreprise_news->body, 200) }}
+                                    {{ Str::limit($entreprise_news->body, 100) }}
                                     </p>
                                 </div>
             
@@ -105,13 +101,11 @@
                     </div>
                         @endforeach
                         <div class="read">
-                            <button class="read-more mt-5">Show more</button>
+                            <button class="read-more mt-5"><a href="/economie-finance" class="link link-black">Read more</a></button>
                         </div>
                     </div>
                     <div class="col-lg-3 banniers">
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
+                        
                         <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
                     </div>
                 </div>
@@ -147,7 +141,7 @@
                         @endforeach
                     </div>
                     <div class="read">
-                        <button class="read-more mt-5">Show more</button>
+                        <button class="read-more mt-5"><a href="/tourisme" class="link link-black">Read more</a></button>
                     </div>
             </div>
              
@@ -181,13 +175,11 @@
                     </div>
                         @endforeach
                         <div class="read">
-                            <button class="read-more mt-5">Show more</button>
+                             <button class="read-more mt-5"><a href="/agenda" class="link link-black">Read more</a></button>
                         </div>
                     </div>
                     <div class="col-lg-3 banniers">
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
+                        
                         <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
                     </div>
                 </div>
@@ -223,7 +215,7 @@
                         @endforeach
                     </div>
                     <div class="read">
-                        <button class="read-more mt-5">Show more</button>
+                        <button class="read-more mt-5"><a href="/business" class="link link-black">Read more</a></button>
                     </div>
             </div>
              
@@ -257,13 +249,11 @@
                     </div>
                         @endforeach
                         <div class="read">
-                            <button class="read-more mt-5">Show more</button>
+                            <button class="read-more mt-5"><a href="/nomination" class="link link-black">Read more</a></button>
                         </div>
                     </div>
                     <div class="col-lg-3 banniers">
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
-                        <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
+                        
                         <a href=""><img src="images/files/1/Banners/bannier.jpg" alt=""></a>
                     </div>
                 </div>

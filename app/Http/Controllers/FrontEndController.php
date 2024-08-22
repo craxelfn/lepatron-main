@@ -50,7 +50,7 @@ class FrontEndController extends Controller
     public function category($category){ 
         $categorie = Category::where("slug",$category)->first() ; 
         try { 
-            $articles = Post::where("category_id",$categorie->id)->paginate(1) ;
+            $articles = Post::where("category_id",$categorie->id)->paginate(5) ;
         }catch(Exception $e ){ 
             abort(404); 
         }
