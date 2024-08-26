@@ -28,25 +28,26 @@
                         <h2 class="h2  ms-3 mb-4">Read More : </h2>
                         <div class="col-lg-4">
                             <a href="">
-                            <img src=" {{$article->image}}"   class="img-fluid article-img  mb-3" alt="" />
+                            <img src=" {{$article->image}}"   class="img-fluid article-imgg  mb-3" alt="" />
                             </a>
-                            <h2 class=""><a href="" class="link link-dark h3 ps-1">Introduction to RESTful Services</a></h2>
+                            <h2 class=""><a href="" class="link link-dark h3 ps-1 hover-underline ">Introduction to RESTful Services</a></h2>
                             <p class="text-black-50 text-end ">August 15, 2024</p>
                         </div>
                         <div class="col-lg-4">
                             <a href="">
-                            <img src=" {{$article->image}}"   class="img-fluid article-img  mb-3" alt="" />
+                            <img src=" {{$article->image}}"   class="img-fluid article-imgg  mb-3" alt="" />
                             </a>
-                            <h2 class=""><a href="" class="link link-dark h3 ps-1">Introduction to RESTful Services</a></h2>
+                            <h2 class=""><a href="" class="link link-dark h3 ps-1 hover-underline ">Introduction to RESTful Services</a></h2>
                             <p class="text-black-50 text-end ">August 15, 2024</p>
                         </div>
                         <div class="col-lg-4">
                             <a href="">
-                            <img src=" {{$article->image}}"   class="img-fluid article-img  mb-3" alt="" />
+                            <img src=" {{$article->image}}"   class="img-fluid article-imgg  mb-3" alt="" />
                             </a>
-                            <h2 class=""><a href="" class="link link-dark h3 ps-1">Introduction to RESTful Services</a></h2>
+                            <h2 class=""><a href="" class="link link-dark h3 ps-1 hover-underline ">Introduction to RESTful Services</a></h2>
                             <p class="text-black-50 text-end ">August 15, 2024</p>
                         </div>
+                        
                      </div>
                 </div>
                     
@@ -58,10 +59,10 @@
                         <div class="article mb-2">
                             <div class="row">
                                 <div class="col-lg-5">
-                                    <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
+                                    <img class="h-100 w-100 article-imggg" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
                                 </div>
                                 <div class="col-lg-7 w-50">
-                                    <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
+                                    <h2><a class="link-black text1 hover-underline " href="">Introduction to RESTful Services</a></h2>
                                     <p class="text-black-50"> August 15, 2024</p>
                                 </div>
                             </div>
@@ -69,10 +70,10 @@
                         <div class="article mb-2">
                             <div class="row">
                                 <div class="col-lg-5">
-                                    <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
+                                    <img class="h-100 w-100 article-imggg" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
                                 </div>
                                 <div class="col-lg-7 w-50">
-                                    <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
+                                    <h2><a class="link-black text1 hover-underline " href="">Introduction to RESTful Services</a></h2>
                                     <p class="text-black-50"> August 15, 2024</p>
                                 </div>
                             </div>
@@ -80,16 +81,14 @@
                         <div class="article mb-2">
                             <div class="row">
                                 <div class="col-lg-5">
-                                    <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
+                                    <img class="h-100 w-100 article-imggg" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
                                 </div>
                                 <div class="col-lg-7 w-50">
-                                    <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
+                                    <h2><a class="link-black text1 hover-underline " href="">Introduction to RESTful Services</a></h2>
                                     <p class="text-black-50"> August 15, 2024</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        
                     </div>
                
                 </div>

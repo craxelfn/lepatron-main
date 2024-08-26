@@ -20,13 +20,13 @@
                             <div class="col-lg-7 col-md-7">
                                 <div class="element-article-infos">
                                     <h2>
-                                        <a href="{{ Route('post.index',['category'=>$article->category->name , 'article'=>$article->slug,'id'=>$article->id]) }} " class=" element-article-infos-title">
+                                        <a href="{{ Route('post.index',['category'=>$article->category->name , 'article'=>$article->slug,'id'=>$article->id]) }} " class=" element-article-infos-title hover-underline">
                                         {{ $article->title}}
                                         </a>
                                     </h2> 
                                     <p class="text-black-50 ms-3 h6">{{ $article->created_at->format('F j, Y') }}</p>
                                     <p class="element-article-infos-descrip">
-                                    {!! Illuminate\Support\Str::words(strip_tags($article->body), 50, '...') !!}
+                                    {!! Illuminate\Support\Str::words(strip_tags($article->body), 20, '...') !!}
                                     </p>
                                     <div><a href="" class="element-article-infos-readm hover-underline-red">Lire la suite —></a> </div>
                                 </div>
@@ -48,10 +48,10 @@
                     <div class="last-article ps-2">
                         <div class="article mb-2">
                             <div class="row">
-                                <div class="col-lg-5">
+                                <div class="col-lg-5 article-last-news" >
                                     <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
                                 </div>
-                                <div class="col-lg-7 w-50">
+                                <div class="col-lg-7  article-last-news-desc w-50">
                                     <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
                                     <p class="text-black-50"> August 15, 2024</p>
                                 </div>
@@ -59,10 +59,10 @@
                         </div>
                         <div class="article mb-2">
                             <div class="row">
-                                <div class="col-lg-5">
+                                <div class="col-lg-5 article-last-news" >
                                     <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
                                 </div>
-                                <div class="col-lg-7 w-50">
+                                <div class="col-lg-7  article-last-news-desc w-50">
                                     <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
                                     <p class="text-black-50"> August 15, 2024</p>
                                 </div>
@@ -70,15 +70,16 @@
                         </div>
                         <div class="article mb-2">
                             <div class="row">
-                                <div class="col-lg-5">
+                                <div class="col-lg-5 article-last-news" >
                                     <img class="h-100 w-100" src="https://www.adobe.com/fr/products/firefly/features/media_179d807b0123090143eea74eea2d7cf4e7aa962ae.png?width=750&format=png&optimize=medium" alt="">
                                 </div>
-                                <div class="col-lg-7 w-50">
+                                <div class="col-lg-7  article-last-news-desc w-50">
                                     <h2><a class="link-black text1" href="">Introduction to RESTful Services</a></h2>
                                     <p class="text-black-50"> August 15, 2024</p>
                                 </div>
                             </div>
                         </div>
+                        
                         
                         
                     </div>

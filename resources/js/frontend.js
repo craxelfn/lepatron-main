@@ -66,27 +66,27 @@ function prevContent() {
     showContent(currentIndex);
 }
 
-let sliderInterval = setInterval(nextContent, 2000);
+let sliderInterval = setInterval(nextContent, 5000);
 
 numbers.forEach((number, index) => {
     number.addEventListener('click', () => {
         clearInterval(sliderInterval);
         showContent(index);
         currentIndex = index;
-        sliderInterval = setInterval(nextContent, 2000);
+        sliderInterval = setInterval(nextContent, 5000);
     });
 });
 
 prevButton.addEventListener('click', () => {
     clearInterval(sliderInterval);
     prevContent();
-    sliderInterval = setInterval(nextContent, 2000);
+    sliderInterval = setInterval(nextContent, 5000);
 });
 
 nextButton.addEventListener('click', () => {
     clearInterval(sliderInterval);
     nextContent();
-    sliderInterval = setInterval(nextContent, 2000);
+    sliderInterval = setInterval(nextContent, 5000);
 });
 
 showContent(currentIndex);

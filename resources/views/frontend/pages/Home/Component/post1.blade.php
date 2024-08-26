@@ -1,4 +1,4 @@
-<section class="economie_finance entreprises mb-5">
+<section class="economie_finance entreprises mt-5 mb-5">
             <div class="type-articles">
                 <h3 class="text-center">economie&finance</h3>
             </div>
@@ -14,14 +14,14 @@
                             <div class="article2-description">
                                 
                                 <h2 class="h3 article2-title ">
-                                 <a href="{{ Route('post.index',['category'=>$alaune_news->category->name , 'article'=>$alaune_news->slug,'id'=>$alaune_news->id]) }}" class="link-black hover-underline">
+                                 <a href="{{ Route('post.index',['category'=>$alaune_news->category->name , 'article'=>$alaune_news->slug,'id'=>$alaune_news->id]) }}" class="link-black ">
                                     {{ $alaune_news->title}}
                                  </a>
                                 </h2>
                              
-                                <p class="text-black-50 article2-date">{{ $alaune_news->created_at->format('F j, Y') }} </p>
+                               
                                 <p class="article2-info">
-                                {{ Str::limit($alaune_news->body, 50   ) }}
+                                {{ Str::limit($alaune_news->body, 100  ) }}
                                 </p>
                             </div>
                     </div>
@@ -37,10 +37,18 @@
                 </div>
             </div>
 </section>
+<div class="new-ff">
+    <div class="cercle"></div>
+    <div class="title">A La Une</div>
+    <div class="ligne">
+        <div></div>
+    </div>
+
+</div>
 <section class="a-la-une h-100 mb-5">
-            <div class="type-articles">
+            <!-- <div class="type-articles">
                  <h3 class="text-center">A La Une</h3>
-            </div>
+            </div> -->
             <div class="container mt-5">
                     <div class="row " >
                         @foreach ($entreprise_news as $entreprise_news)
@@ -49,18 +57,16 @@
                                     <img class="img-fluid article-img image-hover1" src="{{$entreprise_news->image }}" alt="">
                                     </a>
                                 <div class="article-description">
-                                    <p class="text-black-50">{{ $entreprise_news->created_at->format('F j, Y')}} </p>
-                                    
-                                    <h2 class="">
-                                        <a href="{{ Route('post.index',['category'=>$entreprise_news->category->name , 'article'=>$entreprise_news->slug,'id'=>$entreprise_news->id]) }}" class="link-black mb-1 h5 hover-underline">
-                                            {{ $entreprise_news->title}}
+                                    <h2 class="title-height">
+                                        <a href="{{ Route('post.index',['category'=>$entreprise_news->category->name , 'article'=>$entreprise_news->slug,'id'=>$entreprise_news->id]) }}" class="link-black  h5">
+                                            {{ $entreprise_news->title }}
                                             </a>
                                     </h2>
                                     
                                     
-                                    <p>
+                                    <!-- <p>
                                     {{ Str::limit($entreprise_news->body, 100) }}
-                                    </p>
+                                    </p> -->
                                 </div>
             
                             </div>

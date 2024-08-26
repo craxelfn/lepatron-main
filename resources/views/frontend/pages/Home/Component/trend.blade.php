@@ -8,7 +8,7 @@
                             <p class="type" >{{ $trend_news->category->name }}</p>
                             </a>
                             <div class="info">
-                                <p class="text-white-50 h2">{{ $trend_news->created_at->format('F j, Y') }}</p>
+                                <!-- <p class="text-white-50 h2">{{ $trend_news->created_at->format('F j, Y') }}</p> -->
                                 <h2 class="hover-underline-white">
                                 <a href="" class="link">
                                     {{ $trend_news->title }}   
@@ -37,7 +37,7 @@
                                     </a>
                                     </h2 >
                                     
-                                    <p class="text-black-50 last-text pb-3">{{ Str::limit($trend->body, 200) }}
+                                    <p class="text-black-50 last-text pb-3">{{ Str::limit($trend->body, 100) }}
                                     </p>
                                 </div>
                             </div>

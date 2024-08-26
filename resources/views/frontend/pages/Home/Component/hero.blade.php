@@ -1,4 +1,4 @@
-<section class="hero h-100">
+<section class="hero mt-4 h-100 mb-5">
             <div class="container">
                 <div class="row mt-2 ">
                      <div class="col-lg-8">
@@ -9,20 +9,20 @@
                                 <div class="content-element" id="1">
                                     <img src="{{ $article->image }}"  class="img-fluid image1 dark-img" alt="">
                                     
-                                    <div class="all">
-                                        <a class="type link">{{ $article->category->name }}</a>
+                                    <div class="all w-100">
+                                    <a class=" type link mb-4">{{ $article->category->name }}</a> 
                                     <div class="description">
-                                        <div class="lieu-date text-white-50 mb-3">{{ $article->created_at }}</div>
                                         
-                                        <h2>
-                                        <a class="title link mb-3 hover-underline-white ">
-                                            {{ strtoupper($article->title) }}
-                                        </a>
+                                        
+                                        <h2 class="mb-3">
+                                            <a class="title link mb-3 hover-underline-white ">
+                                                {{ strtoupper($article->title) }}
+                                            </a>
                                         </h2>
                                         
-                                        <div class="description">
+                                        <!-- <div class="description">
                                         {{ Str::limit($article->body, 100) }}
-                                        </div>
+                                        </div> -->
                                     </div>
                                     </div>   
                             </div>
@@ -52,7 +52,7 @@
                                 <p class="hero-news-type">{{ $news->category->name }} </p>
                                 </a> 
                                 <h2 class="title-last">
-                                <a href="" class="link-black hover-underline">
+                                <a href="" class="link-black title5 ">
                                     
                                         {{ $news->title}}
                                 </a> 
